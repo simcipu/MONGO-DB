@@ -81,4 +81,14 @@ public class ProductController extends WebMvcConfigurerAdapter{
 
     }
     
+         @RequestMapping(value = {"/mongo/all"}, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public ResponseEntity<List<ProductDto>> ProductAll() {
+
+      List<ProductDto> li=service.all();
+
+      return new ResponseEntity<>(li, HttpStatus.OK);
+
+    }
+    
 }

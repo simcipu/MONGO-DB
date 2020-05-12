@@ -108,4 +108,22 @@ public class ProductServiceImpl implements ProductService {
       return li;
     }
 
+    @Override
+    public List<ProductDto> all() {
+               List<ProductDto> li = new ArrayList<>();
+        List<Product> list=repo.findAll();
+        
+        if(!list.isEmpty()){
+
+            list.stream().forEach((l)->{
+            li.add(mapper.map(l));
+            
+            });
+
+        }
+        
+        
+      return li;
+    }
+
 }
