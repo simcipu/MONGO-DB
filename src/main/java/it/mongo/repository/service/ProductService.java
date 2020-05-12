@@ -25,6 +25,4 @@ public interface ProductService {
     
     List<ProductDto> list(String surname);
     
-     List<ProductDto> all();
-    
 }

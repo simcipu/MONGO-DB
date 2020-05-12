@@ -66,7 +66,7 @@ public class ProductRepositoryTest {
     @Test
     public void simpleTest(){
     
-   /* repo.save(pr);
+    repo.save(pr);
     
     
     Product pr1=repo.findOne("01");
@@ -76,16 +76,11 @@ public class ProductRepositoryTest {
     
    List<Product> list= repo.findByProductCustumer("cipullo");
    
-   assertTrue(!list.isEmpty());*/
+   assertTrue(!list.isEmpty());
    
    
-   List<Product> list1=repo.findByType("legumi");
-   
-     assertTrue(!list1.isEmpty());
 
     }
-            
-    
     
     
     @Test
