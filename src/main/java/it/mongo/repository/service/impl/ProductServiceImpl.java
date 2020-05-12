@@ -92,20 +92,36 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDto> list(String surname) {
-          List<ProductDto> li = new ArrayList<>();
-        List<Product> list=repo.findByProductCustumer(surname);
-        
-        if(!list.isEmpty()){
+        List<ProductDto> li = new ArrayList<>();
+        List<Product> list = repo.findByProductCustumer(surname);
 
-            list.stream().forEach((l)->{
-            li.add(mapper.map(l));
-            
+        if (!list.isEmpty()) {
+
+            list.stream().forEach((l) -> {
+                li.add(mapper.map(l));
+
             });
 
         }
-        
-        
-      return li;
+
+        return li;
+    }
+
+    @Override
+    public List<ProductDto> listAll() {
+        List<ProductDto> li = new ArrayList<>();
+        List<Product> list = repo.findAll();
+
+        if (!list.isEmpty()) {
+
+            list.stream().forEach((l) -> {
+                li.add(mapper.map(l));
+
+            });
+
+        }
+
+        return li;
     }
 
 }
