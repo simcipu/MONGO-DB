@@ -21,13 +21,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity
 public class ApllicationConfig extends WebSecurityConfigurerAdapter {
-    
+
+    //prova  a committare
+
+
     @Bean
     public Mapper mapper(){
     
     Mapper mapper=new Mapper();
-    
-    
     return mapper;
     
     
