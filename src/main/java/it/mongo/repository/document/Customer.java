@@ -19,9 +19,6 @@ public class Customer {
     
     
     private String company;
-    
-    
-   
 
     public String getName() {
         return name;

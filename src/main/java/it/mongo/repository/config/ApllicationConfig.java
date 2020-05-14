@@ -30,8 +30,7 @@ public class ApllicationConfig extends WebSecurityConfigurerAdapter {
     
     Mapper mapper=new Mapper();
     return mapper;
-    
-    
+
     }
 
     

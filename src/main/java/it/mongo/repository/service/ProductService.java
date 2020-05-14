@@ -12,6 +12,7 @@ import java.util.List;
  *
  * @author simonecipullo
  */
+
 public interface ProductService {
     
     
