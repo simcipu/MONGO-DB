@@ -23,7 +23,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class ApllicationConfig extends WebSecurityConfigurerAdapter {
 
     //prova  a committare
-
+  //sicurezza
 
     @Bean
     public Mapper mapper(){
