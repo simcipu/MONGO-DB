@@ -6,17 +6,16 @@
 package it.mongo.repository.dto;
 
 /**
- *
  * @author simonecipullo
  */
 public class CustomerDto {
-    
-     private String name;
-    
-    
+
+    private String name;
+
+
     private String surname;
-    
-    
+
+
     private String company;
 
     public String getName() {
@@ -42,5 +41,5 @@ public class CustomerDto {
     public void setCompany(String company) {
         this.company = company;
     }
-    
+
 }

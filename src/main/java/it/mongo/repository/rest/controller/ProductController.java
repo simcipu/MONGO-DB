@@ -92,4 +92,15 @@ public class ProductController extends WebMvcConfigurerAdapter{
       return new ResponseEntity<>(li, HttpStatus.OK);
 
     }
+
+
+    @RequestMapping(value = {"/mongo/get/id/{id}"}, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public ResponseEntity<ProductDto> ProductById(@PathVariable("id") String id) {
+
+        ProductDto li=service.findById(id);
+
+        return new ResponseEntity<>(li, HttpStatus.OK);
+
+    }
 }

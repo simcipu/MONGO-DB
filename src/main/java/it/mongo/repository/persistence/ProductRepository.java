@@ -21,4 +21,7 @@ public interface ProductRepository extends MongoRepository<Product, String>, Mon
     @Query("{ 'type' : ?0 }")
     List<Product> findByType(String type);
 
+    @Query("{ 'serialNumber' : ?0 }")
+    Product findById(String id);
+
 }

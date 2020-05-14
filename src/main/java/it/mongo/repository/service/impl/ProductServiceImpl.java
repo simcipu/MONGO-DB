@@ -124,4 +124,18 @@ public class ProductServiceImpl implements ProductService {
         return li;
     }
 
+    @Override
+    public ProductDto findById(String id) {
+
+        ProductDto dto=new ProductDto();
+
+         if(repo.exists(id)){
+
+             dto=mapper.map(repo.findById(id));
+
+         }
+
+        return dto;
+    }
+
 }
