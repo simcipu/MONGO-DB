@@ -24,7 +24,6 @@ public class Mapper {
     cu.setCompany(dto.getCompany());
     cu.setName(dto.getName());
     cu.setSurname(dto.getSurname());
-    cu.setPiva(dto.getPiva());
     
     
     return cu;
@@ -59,7 +58,7 @@ public class Mapper {
     cu.setCompany(doc.getCompany());
     cu.setName(doc.getName());
     cu.setSurname(doc.getSurname());
-    cu.setPiva(doc.getPiva());
+
     
     return cu;
     

@@ -20,16 +20,6 @@ public class Customer {
     
     private String company;
 
-    private String piva;
-
-    public String getPiva() {
-        return piva;
-    }
-
-    public void setPiva(String piva) {
-        this.piva = piva;
-    }
-
     public String getName() {
         return name;
     }
