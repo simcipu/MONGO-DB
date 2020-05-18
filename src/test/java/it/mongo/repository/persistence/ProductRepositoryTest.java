@@ -19,7 +19,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
@@ -39,9 +38,7 @@ public class ProductRepositoryTest {
     
     @Autowired
     private ProductRepository repo;
-    
-        @Autowired
-    private MongoTemplate mongoTemplate; 
+
     
     @Before
     public void setUp(){
@@ -77,9 +74,9 @@ public class ProductRepositoryTest {
    List<Product> list= repo.findByProductCustumer("cipullo");
    
    assertTrue(!list.isEmpty());
-   
-   
 
+        List<Product> list1= repo.findAll();
+        assertTrue(!list1.isEmpty());
     }
     
     
@@ -89,7 +86,7 @@ public class ProductRepositoryTest {
     
       ProductDto dto=  map.map(pr);
     
-            Gson g1 = new Gson();
+      Gson g1 = new Gson();
        String obj=g1.toJson(dto,ProductDto.class);
         System.out.print(obj);
     
