@@ -63,7 +63,7 @@
     </dependencies>
     
      <build>
-         <defaultGoal>SONAR_MAVEN_GOAL</defaultGoal>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
