@@ -9,13 +9,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import javax.xml.bind.annotation.XmlRootElement;
+
 
 /**
  *
  * @author simonecipullo
  */
-@XmlRootElement
 public class ErrorMessage {
     
        private List<String> errors;

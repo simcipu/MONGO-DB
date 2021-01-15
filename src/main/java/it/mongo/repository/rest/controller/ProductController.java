@@ -18,14 +18,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
  *
  * @author simonecipullo
  */
 @RestController
-public class ProductController extends WebMvcConfigurerAdapter{
+public class ProductController /*extends WebMvcConfigurerAdapter*/{
 
     @Autowired
     private ProductService service;

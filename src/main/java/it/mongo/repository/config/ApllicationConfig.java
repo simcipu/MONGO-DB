@@ -9,18 +9,15 @@ import it.mongo.repository.utils.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
 
 /**
  *
  * @author simonecipullo
  */
 @Configuration
-@EnableWebSecurity
-public class ApllicationConfig extends WebSecurityConfigurerAdapter {
+//@EnableWebSecurity
+public class ApllicationConfig /*extends WebSecurityConfigurerAdapter */{
 
     //prova  a committare
   //sicurezza
@@ -32,7 +29,7 @@ public class ApllicationConfig extends WebSecurityConfigurerAdapter {
     return mapper;
 
     }
-
+/*
     
   @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -56,5 +53,5 @@ public class ApllicationConfig extends WebSecurityConfigurerAdapter {
                 .withUser("simone").password("pass").roles("USER");
     }
 
-    
+    */
 }
